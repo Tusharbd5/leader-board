@@ -1,0 +1,211 @@
+/* Fonts Used Here- */
+
+/* Poppins Font- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+/* Roboto Font- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Style For Navigation Bar */
+.menu-bar{
+    background-color: #562EFF;
+    height: 94px;
+}
+.nav-bar{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 1%;
+}
+.nav-info
+{
+    display: flex;
+    align-items: center;
+}
+.nav-bar a
+{
+    margin-right: 36px;
+    text-decoration: none;
+    color: white;
+}
+.nav-bar a img{
+    width: 51px;
+    height: 51px;
+}
+
+/* Common Styles & Utelities-*/
+body
+{
+    font-family: 'Poppins', sans-serif;
+    background-color: #F3F1FF;
+    margin: 0;
+}
+main
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container
+{
+    background-color: #FFFFFF;
+    width: 870px;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 21px;
+}
+.top-players
+{
+    margin-bottom: 22px;
+}
+hr
+{
+    border: 1px solid #D1D1D1;
+    margin-bottom: 27px;
+}
+.section-title
+{
+    color: #562EFF;
+    font-size: 24px;
+    margin-top: 3px;
+    margin-bottom: 30px;
+}
+/* Styles for Top Player */
+.players
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+}
+.player
+{
+    display: flex;
+    align-items: center;
+}
+.player img
+{
+    width: 56px;
+    height: 56px;
+}
+.player-name
+{
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+/* -------This is Top-Blog Style Section---- */
+.blogs
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.blog
+{
+    display: flex;
+    margin-right: 40px;
+}
+.blog .thumbnail img
+{
+    width: 177px;
+    height: 117px;
+}
+.blog-info
+{
+    margin-left: 16px;
+}
+.blog-title
+{
+    font-size: 20px;
+}
+.blog-author
+{
+    color: #9F9F9F;
+    font-size: 16px;
+}
+.blog-author a{
+    text-decoration: none;
+    color: #562EFF;
+    font-size: 16px;
+}
+
+/* ----------Style For 
+Leatest Courses Section------- */
+.courses
+{
+    display: flex;
+}
+.course
+{
+    box-shadow: 0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    margin-right: 20px;
+    padding: 13px 10px;
+    width: 252px;
+}
+.course-info
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.course .course-banner img
+{
+    width: 224px;
+    height: 104px;
+}
+.course-title
+{
+    margin-bottom: 0;
+}
+.course-author
+{
+    margin: 0;
+}
+.course-author a
+{
+    text-decoration: none;
+    color: #ED6B4F;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+.fa-star
+{
+    font-size: 12px;
+}
+.fa-star.empty
+{
+    color: #AEAEAE;
+}
+.fa-star.filled
+{
+    color: #FFC014;
+}
+.rating-txt
+{
+    color: #A2A2A2;
+    font-size: 15px;
+    gridg
+}
+.course-dur
+{
+    color: #ED6B4F;
+}
+
+/* Media Query For Some Devices- */
+/* Small Devices */
+
+@media (max-width:600px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        
+    }
+    .players, .blogs{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .courses{
+        flex-direction: column;
+    }
+}
